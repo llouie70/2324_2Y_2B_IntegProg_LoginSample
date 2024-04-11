@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="2324_2B_LoginSample" Class="DataClassDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=LAPTOP-E6RG946U;Initial Catalog=2324_2B_LoginSample;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False" SettingsObjectName="_2324_2Y_2B_IntegProg_LoginSample.Properties.Settings" SettingsPropertyName="_2324_2B_LoginSampleConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tblLog" Member="tblLogs">
+    <Type Name="tblLog">
+      <Column Name="LogID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LoginID" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="LogDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="tblLogin_tblLog" Member="tblLogin" ThisKey="LoginID" OtherKey="LoginID" Type="tblLogin" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblLogin" Member="tblLogins">
+    <Type Name="tblLogin">
+      <Column Name="LoginID" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LoginPassword" Type="System.String" DbType="NVarChar(16) NOT NULL" CanBeNull="false" />
+      <Column Name="LoginName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="LoginDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="tblLogin_tblLog" Member="tblLogs" ThisKey="LoginID" OtherKey="LoginID" Type="tblLog" />
+    </Type>
+  </Table>
+</Database>
