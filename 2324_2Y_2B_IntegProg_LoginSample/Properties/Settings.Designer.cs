@@ -12,7 +12,7 @@ namespace _2324_2Y_2B_IntegProg_LoginSample.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.9.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.7.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -26,8 +26,8 @@ namespace _2324_2Y_2B_IntegProg_LoginSample.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LAPTOP-E6RG946U;Initial Catalog=2324_2B_LoginSample;Integrated Securi" +
-            "ty=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=CCL01-14;Initial Catalog=2324_2B_LoginSample;Integrated Security=True" +
+            ";Connect Timeout=30;Encrypt=False;TrustServerCertificate=False")]
         public string _2324_2B_LoginSampleConnectionString {
             get {
                 return ((string)(this["_2324_2B_LoginSampleConnectionString"]));
